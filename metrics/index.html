@@ -809,18 +809,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../eventsources/deployment-strategies/" title="EventSource Deployment Strategies" class="md-nav__link">
-      EventSource Deployment Strategies
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../eventsources/multiple-events/" title="EventSource With Multiple Events" class="md-nav__link">
       EventSource With Multiple Events
     </a>
@@ -847,6 +835,18 @@
   <li class="md-nav__item">
     <a href="../eventsources/services/" title="EventSource Services" class="md-nav__link">
       EventSource Services
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../eventsources/ha/" title="EventSource High Availability" class="md-nav__link">
+      EventSource High Availability
     </a>
   </li>
 
@@ -960,7 +960,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/argo-workflow/" title="Argo Workflow Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/argo-workflow/" title="Argo Workflow Trigger" class="md-nav__link">
       Argo Workflow Trigger
     </a>
   </li>
@@ -972,7 +972,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/aws-lambda/" title="AWS Lambda" class="md-nav__link">
+    <a href="../sensors/triggers/aws-lambda/" title="AWS Lambda" class="md-nav__link">
       AWS Lambda
     </a>
   </li>
@@ -984,7 +984,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/http-trigger/" title="HTTP Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/http-trigger/" title="HTTP Trigger" class="md-nav__link">
       HTTP Trigger
     </a>
   </li>
@@ -996,7 +996,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/nats-trigger/" title="NATS Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/nats-trigger/" title="NATS Trigger" class="md-nav__link">
       NATS Trigger
     </a>
   </li>
@@ -1008,7 +1008,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/kafka-trigger/" title="Kafka Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/kafka-trigger/" title="Kafka Trigger" class="md-nav__link">
       Kafka Trigger
     </a>
   </li>
@@ -1020,7 +1020,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/k8s-object-trigger/" title="Kubernetes Object Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/k8s-object-trigger/" title="Kubernetes Object Trigger" class="md-nav__link">
       Kubernetes Object Trigger
     </a>
   </li>
@@ -1032,7 +1032,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/log/" title="Log" class="md-nav__link">
+    <a href="../sensors/triggers/log/" title="Log" class="md-nav__link">
       Log
     </a>
   </li>
@@ -1044,7 +1044,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/openwhisk-trigger/" title="OpenWhisk Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/openwhisk-trigger/" title="OpenWhisk Trigger" class="md-nav__link">
       OpenWhisk Trigger
     </a>
   </li>
@@ -1056,7 +1056,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/slack-trigger/" title="Slack Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/slack-trigger/" title="Slack Trigger" class="md-nav__link">
       Slack Trigger
     </a>
   </li>
@@ -1068,7 +1068,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../triggers/build-your-own-trigger/" title="Build Your Own Trigger" class="md-nav__link">
+    <a href="../sensors/triggers/azure-event-hubs/" title="Azure Event Hubs" class="md-nav__link">
+      Azure Event Hubs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sensors/triggers/build-your-own-trigger/" title="Build Your Own Trigger" class="md-nav__link">
       Build Your Own Trigger
     </a>
   </li>
@@ -1085,7 +1097,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../trigger-conditions/" title="Trigger Conditions" class="md-nav__link">
+    <a href="../sensors/trigger-conditions/" title="Trigger Conditions" class="md-nav__link">
       Trigger Conditions
     </a>
   </li>
@@ -1097,7 +1109,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../more-about-sensors-and-triggers/" title="More Information" class="md-nav__link">
+    <a href="../sensors/ha/" title="Sensor High Availability" class="md-nav__link">
+      Sensor High Availability
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sensors/more-about-sensors-and-triggers/" title="More Information" class="md-nav__link">
       More Information
     </a>
   </li>
@@ -1359,7 +1383,7 @@
 
 
   <li class="md-nav__item">
-    <a href="https://github.com/argoproj/argo-events/releases" title="Releases ⧉" class="md-nav__link">
+    <a href="../releases/" title="Releases ⧉" class="md-nav__link">
       Releases ⧉
     </a>
   </li>
@@ -1579,7 +1603,7 @@ those user metrics, add following to your configuration.</p>
 <p>Also please make sure your Prometheus Service Account has the permission to do
 POD discovery. A sample <code>ClusterRole</code> like below needs to be added or merged,
 and grant it to your Service Account.</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">rbac.authorization.k8s.io/v1beta1</span>
+<div class="codehilite"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">rbac.authorization.k8s.io/v1</span>
 <span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ClusterRole</span>
 <span class="nt">metadata</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pod-discovery</span>
